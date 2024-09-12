@@ -1,32 +1,27 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { Menu } from 'lucide-react'
-import { Button } from "@/components/ui/button"
-import Image from 'next/image'
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet"
-import { useState } from 'react'
+import Link from "next/link";
+import { Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useState } from "react";
 
 const navItems = [
   { title: "Home", href: "/" },
-  { title: "About", href: "/about" },
-  { title: "Services", href: "/services" },
+  { title: "NHS Recruitment", href: "/nhs-recruitment" },
+  { title: "Recruitment Process", href: "/recruitment-process" },
   { title: "Contact", href: "/contact" },
-]
+];
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-14 items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="flex items-center space-x-2">
-          <img
+            <img
               src="/primelocus.png"
               alt="prime Locums"
               width={40}
@@ -65,7 +60,7 @@ export default function Header() {
         </Sheet>
       </div>
     </header>
-  )
+  );
 }
 
 function MobileNav({ items, setIsOpen }) {
@@ -82,5 +77,5 @@ function MobileNav({ items, setIsOpen }) {
         </Link>
       ))}
     </div>
-  )
+  );
 }

@@ -4,8 +4,8 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  --primary: #0A77B8;
+  --foreground: hsl(0, 0%, 9%);
+  --primary: #0a77b8;
 }
 
 /* @media (prefers-color-scheme: white) {
@@ -35,9 +35,9 @@ body {
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: #0A77B8;
+    --primary: #0a77b8;
     --primary-foreground: 0 0% 98%;
-    --secondary: #ED1A25;
+    --secondary: #ed1a25;
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
@@ -84,10 +84,10 @@ body {
 }
 
 @layer base {
-  * {
+  /* * {
     @apply border-border;
-  }
+  } */
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-gray-300;
   }
 }
