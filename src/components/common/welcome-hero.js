@@ -3,49 +3,114 @@ import { Button } from "@/components/ui/button";
 
 export default function WelcomeHero() {
   return (
-    <section className="bg-gradient-to-b from-blue-100 to-white ">
-      <div className="container mx-auto py-16  sm:py-24 flex flex-col lg:flex-row items-center">
-        <div className="text-center lg:text-left lg:w-1/2">
-          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl md:text-5xl">
-            Welcome to{" "}
-            <span className="text-primary">Prime Locums Group Limited</span>
-          </h1>
-          <h2 className="mt-2 text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl md:text-4xl">
-            T/A Prime Locums
-          </h2>
-          <p className="mt-3 max-w-md mx-auto text-base text-gray-600 dark:text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            Your trusted partner in healthcare staffing.
-          </p>
-          <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
-            <div className="rounded-md shadow">
-              <Button
-                size="lg"
-                className="w-full sm:w-auto text-primary text-white"
-              >
-                Find Opportunities
-              </Button>
+<div
+   className="relative bg-white dark:bg-dark pt-[120px] pb-[110px] lg:pt-[150px]"
+   >
+   <div className="container mx-auto">
+      <div className="flex flex-wrap items-center -mx-4">
+         <div className="w-full px-4 lg:w-5/12">
+            <div className="hero-content">
+               <h1
+                  className="mb-5 text-4xl font-bold !leading-[1.208] text-dark dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl"
+                  >
+                  Welcome to  <br />
+                  <span className="text-primary">Prime Locums Group</span>   <br />
+                  Limited.
+               </h1>
+               <p
+                  className="mb-8 max-w-[480px] text-base text-body-color dark:text-dark-6"
+                  >
+                  We specialize in supplying highly qualified and dedicated Doctors, Nurses, and Care Workers to the NHS and other healthcare providers across the UK. 
+               </p>
+               <ul className="flex flex-wrap items-center">
+                  <li>
+                     <a
+                        href="javascript:void(0)"
+                        className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-center text-white rounded-md bg-primary hover:bg-blue-dark lg:px-7"
+                        >
+                     Get Started
+                     </a>
+                  </li>
+               </ul>
+               <div className="clients pt-16">
+                  <h6
+                     className="flex items-center mb-6 text-xs font-normal text-body-color dark:text-dark-6"
+                     >
+                     Some Of Our Clients
+                     <span className="inline-block w-8 h-px ml-3 bg-body-color"></span>
+                  </h6>
+                  <div className="flex items-center gap-4 xl:gap-[50px]">
+                     <a href="javascript:void(0)" className="block py-3">
+                     <img
+                        src="https://cdn.tailgrids.com/2.0/image/assets/images/brands/ayroui.svg"
+                        alt="oracle"
+                        />
+                     </a>
+                     <a href="javascript:void(0)" className="block py-3">
+                     <img
+                        src="https://cdn.tailgrids.com/2.0/image/assets/images/brands/graygrids.svg"
+                        alt="intel"
+                        />
+                     </a>
+                     <a href="javascript:void(0)" className="block py-3">
+                     <img
+                        src="https://cdn.tailgrids.com/2.0/image/assets/images/brands/uideck.svg"
+                        alt="logitech"
+                        />
+                     </a>
+                  </div>
+               </div>
             </div>
-            <div className="mt-3 sm:mt-0 sm:ml-3">
-              <Button
-                variant="outline"
-                size="lg"
-                className="w-full sm:w-aut bg-secondary text-white"
-              >
-                About Us
-              </Button>
+         </div>
+         <div className="hidden px-4 lg:block lg:w-1/12"></div>
+         <div className="w-full px-4 lg:w-6/12">
+            <div className="lg:ml-auto lg:text-right">
+               <div className="relative z-10 inline-block pt-11 lg:pt-0">
+                  <img
+                     src="https://cdn.tailgrids.com/2.0/image/marketing/images/hero/hero-image-01.png"
+                     alt="hero"
+                     className="max-w-full lg:ml-auto"
+                     />
+                  <span className="absolute -left-8 -bottom-8 z-[-1]">
+                     <svg
+                        width="93"
+                        height="93"
+                        viewBox="0 0 93 93"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <circle cx="2.5" cy="2.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="2.5" cy="24.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="2.5" cy="46.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="2.5" cy="68.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="2.5" cy="90.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="24.5" cy="2.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="24.5" cy="24.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="24.5" cy="46.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="24.5" cy="68.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="24.5" cy="90.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="46.5" cy="2.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="46.5" cy="24.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="46.5" cy="46.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="46.5" cy="68.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="46.5" cy="90.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="68.5" cy="2.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="68.5" cy="24.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="68.5" cy="46.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="68.5" cy="68.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="68.5" cy="90.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="90.5" cy="2.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="90.5" cy="24.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="90.5" cy="46.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="90.5" cy="68.5" r="2.5" fill="#ed1a25" />
+                        <circle cx="90.5" cy="90.5" r="2.5" fill="#ed1a25" />
+                     </svg>
+                  </span>
+               </div>
             </div>
-          </div>
-        </div>
-        <div className="mt-10 lg:mt-0 lg:w-1/2">
-          <Image
-            src="/healthcare.jpg"
-            alt="Healthcare professionals team"
-            width={600}
-            height={400}
-            className="w-full max-w-lg mx-auto rounded-lg shadow-xl object-cover"
-          />
-        </div>
+         </div>
       </div>
-    </section>
+   </div>
+</div>
   );
 }

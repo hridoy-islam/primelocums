@@ -57,15 +57,15 @@ export default function Component() {
           {steps.map((step, index) => (
             <div key={index} className="mb-8 flex">
               <div className="flex flex-col items-center mr-4">
-                <div className="flex items-center justify-center w-8 h-8 border-2 border-blue-600 rounded-full">
-                  <span className="text-blue-600 font-bold">{index + 1}</span>
+                <div className="flex items-center justify-center w-8 h-8 border-2 border-primary rounded-full">
+                  <span className="text-primary font-bold">{index + 1}</span>
                 </div>
                 {index < steps.length - 1 && (
-                  <div className="w-0.5 h-full bg-blue-600 mt-2"></div>
+                  <div className="w-0.5 h-full bg-primary mt-2"></div>
                 )}
               </div>
               <div className="bg-white rounded-lg shadow-md p-6 flex-grow">
-                <h3 className="text-xl font-semibold text-blue-600 mb-4">
+                <h3 className="text-xl font-semibold text-primary mb-4">
                   Step {index + 1}: {step.title}
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
@@ -90,7 +90,7 @@ export default function Component() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="bg-white rounded-lg shadow-md p-6">
-            <h3 className="text-xl font-semibold text-blue-600 mb-4">
+            <h3 className="text-xl font-semibold text-primary mb-4">
               Why Choose Us?
             </h3>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
@@ -110,7 +110,7 @@ export default function Component() {
             </ul>
           </div>
           <div className="bg-white rounded-lg shadow-md p-6">
-            <h3 className="text-xl font-semibold text-blue-600 mb-4">
+            <h3 className="text-xl font-semibold text-primary mb-4">
               Tailored Solutions for Healthcare Providers
             </h3>
             <p className="text-gray-600 mb-4">
@@ -130,7 +130,7 @@ export default function Component() {
         </div>
 
         <div className="bg-white rounded-lg shadow-md p-6">
-          <h3 className="text-xl font-semibold text-blue-600 mb-4">
+          <h3 className="text-xl font-semibold text-primary mb-4">
             Ethical Recruitment Practices
           </h3>
           <p className="text-gray-600">

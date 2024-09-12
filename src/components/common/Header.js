@@ -17,8 +17,9 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-14 items-center justify-between">
+    <header className="sticky top-0 z-50 w-full pt-5 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container mx-auto flex h-14 items-center
+       justify-between">
         <div className="flex items-center">
           <Link href="/" className="flex items-center space-x-2">
             <img
@@ -31,7 +32,7 @@ export default function Header() {
           </Link>
         </div>
         <nav className="hidden md:flex md:items-center md:space-x-6">
-          <ul className="flex items-center space-x-6 text-sm font-medium">
+          <ul className="flex items-center space-x-6 text-lg font-medium">
             {navItems.map((item, index) => (
               <li key={index}>
                 <Link
