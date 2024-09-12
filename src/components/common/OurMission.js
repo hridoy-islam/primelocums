@@ -5,18 +5,17 @@ export default function OurMission() {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-12 text-center lg:mb-20">
-              
               <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-primary sm:text-4xl md:text-[40px]">
-              Our Mission
+                Our Mission
               </h2>
-              <p className="text-base text-body-color">
-              Our mission is to bridge the gap between healthcare providers and qualified professionals, supporting the NHS by ensuring there is a continuous supply of competent staff who are fully compliant with UK legislation and NHS standards. We strive to deliver top-tier professionals who contribute to the enhancement of patient care and the operational efficiency of healthcare systems.
+              <p className="text-base text-body-color text-justify">
+                Our mission is to bridge the gap between healthcare providers and qualified professionals, supporting the NHS by ensuring there is a continuous supply of competent staff who are fully compliant with UK legislation and NHS standards. We strive to deliver top-tier professionals who contribute to the enhancement of patient care and the operational efficiency of healthcare systems.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="-mx-4 flex flex-wrap">
+        <div className="-mx-4 flex flex-wrap gap-6">
           <ServiceCard
             title="Excellence"
             details="We recruit only the highest calibre of healthcare workers who meet all UK compliance and regulatory standards."
@@ -47,8 +46,8 @@ export default function OurMission() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M9.89195 14.625C10.9995 10.1252 13.769 7.875 18.1996 7.875C24.8458 7.875 25.6765 12.9375 28.9996 13.7812C31.2151 14.3439 33.1535 13.5002 34.815 11.25C33.7075 15.7498 30.9379 18 26.5073 18C19.8611 18 19.0304 12.9375 15.7073 12.0938C13.4918 11.5311 11.5535 12.3748 9.89195 14.625ZM1.58423 24.75C2.69174 20.2502 5.46132 18 9.89195 18C16.5381 18 17.3689 23.0625 20.692 23.9062C22.9075 24.4689 24.8458 23.6252 26.5073 21.375C25.3998 25.8748 22.6302 28.125 18.1996 28.125C11.5535 28.125 10.7227 23.0625 7.39963 22.2188C5.18405 21.6561 3.24576 22.4998 1.58423 24.75Z"
                   fill="white"
                 />
@@ -89,24 +88,24 @@ export default function OurMission() {
       </div>
     </section>
   );
-};
+}
 
 
 
 const ServiceCard = ({ icon, title, details }) => {
   return (
-    <>
-      <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-        <div className="mb-9 rounded-[20px] h-[300px] bg-white p-10 shadow-lg  md:px-7 xl:px-10">
-          <div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary">
-            {icon}
-          </div>
-          <h4 className="mb-[14px] text-2xl font-semibold text-dark dark:text-white">
-            {title}
-          </h4>
-          <p className="text-body-color dark:text-dark-6">{details}</p>
+    <div className="w-full px-4 md:w-1/2 lg:w-1/3">
+      <div className="flex flex-col h-full mb-9 rounded-[20px] bg-white p-10 shadow-lg md:px-7 xl:px-10">
+        <div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary">
+          {icon}
         </div>
+        <h4 className="mb-[14px] text-2xl font-semibold text-dark dark:text-white">
+          {title}
+        </h4>
+        <p className="text-body-color dark:text-dark-6 flex-grow">
+          {details}
+        </p>
       </div>
-    </>
+    </div>
   );
 };

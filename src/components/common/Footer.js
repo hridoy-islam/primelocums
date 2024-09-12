@@ -1,7 +1,14 @@
+import Link from "next/link";
+
 export default function Footer() {
+  const navItems = [
+    { title: "NHS Recruitment", href: "/nhs-recruitment" },
+    { title: "Recruitment Process", href: "/recruitment-process" },
+    { title: "Contact", href: "/contact" },
+  ];
   return (
 <footer
-   className="relative z-10 bg-white dark:bg-dark pt-20 pb-10 lg:pt-[120px] lg:pb-20"
+   className="relative z-10 bg-white dark:bg-dark pt-20 pb-10 lg:pt-[120px] lg:pb-20 "
    >
    <div className="container mx-auto">
       <div className="flex flex-wrap -mx-4">
@@ -67,38 +74,17 @@ export default function Footer() {
                   Resources
                </h4>
                <ul className="space-y-3">
-                  <li>
-                     <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                        >
-                     SaaS Development
-                     </a>
-                  </li>
-                  <li>
-                     <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                        >
-                     Our Products
-                     </a>
-                  </li>
-                  <li>
-                     <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                        >
-                     User Flow
-                     </a>
-                  </li>
-                  <li>
-                     <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                        >
-                     User Strategy
-                     </a>
-                  </li>
+                  
+                  {navItems.map((item, index) => (
+              <li key={index}>
+                <Link
+                  href={item.href}
+                  className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                >
+                  {item.title}
+                </Link>
+              </li>
+            ))}
                </ul>
             </div>
          </div>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function WelcomeHero() {
   return (
@@ -24,12 +25,12 @@ export default function WelcomeHero() {
                </p>
                <ul className="flex flex-wrap items-center">
                   <li>
-                     <a
-                        href="javascript:void(0)"
+                     <Link
+                        href="/contact"
                         className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-center text-white rounded-md bg-primary hover:bg-blue-dark lg:px-7"
                         >
                      Get Started
-                     </a>
+                     </Link>
                   </li>
                </ul>
                <div className="clients pt-16">
