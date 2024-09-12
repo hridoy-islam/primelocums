@@ -15,7 +15,7 @@ export default function OurMission() {
           </div>
         </div>
 
-        <div className="-mx-4 flex flex-wrap gap-6">
+        <div className="-mx-4 flex flex-wrap">
           <ServiceCard
             title="Excellence"
             details="We recruit only the highest calibre of healthcare workers who meet all UK compliance and regulatory standards."
@@ -94,7 +94,7 @@ export default function OurMission() {
 
 const ServiceCard = ({ icon, title, details }) => {
   return (
-    <div className="w-full px-4 md:w-1/2 lg:w-1/3">
+    <div className="w-full px-4 md:w-1/2 lg:w-1/3 sm:mb-4 xs:mb-4">
       <div className="flex flex-col h-full mb-9 rounded-[20px] bg-white p-10 shadow-lg md:px-7 xl:px-10">
         <div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary">
           {icon}
