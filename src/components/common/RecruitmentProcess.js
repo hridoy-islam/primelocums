@@ -1,4 +1,4 @@
-export default function Component() {
+export default function RecruitmentProcess() {
   const steps = [
     {
       title: "Candidate Sourcing and Vetting",

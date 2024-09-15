@@ -8,8 +8,12 @@ import { useState } from "react";
 
 const navItems = [
   { title: "Home", href: "/" },
-  { title: "NHS Recruitment", href: "/nhs-recruitment" },
-  { title: "Recruitment Process", href: "/recruitment-process" },
+  { title: "About", href: "/about" },
+  { title: "Services", href: "/services" },
+  { title: "Careers", href: "/careers" },
+  { title: "Recruitment", href: "/recruitment" },
+  { title: "Compliance", href: "/compliance" },
+  { title: "International Recruitment", href: "/international-recruitment" },
   { title: "Contact", href: "/contact" },
 ];
 
@@ -18,8 +22,10 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full pt-5 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-14 items-center
-       justify-between">
+      <div
+        className="container mx-auto flex h-14 items-center
+       justify-between"
+      >
         <div className="flex items-center">
           <Link href="/" className="flex items-center space-x-2">
             <img
