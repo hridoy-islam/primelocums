@@ -10,7 +10,7 @@ export default function Services() {
         <div className="grid grid-cols-4 gap-4 sm:grid-cols-4">
           <Link
             className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-            href="#"
+            href="/nurses"
           >
             <span className="inline-block  w-full bg-gray-50 p-3">
               <img src="/nurse.jpg" alt="nurses" />
@@ -21,7 +21,7 @@ export default function Services() {
 
           <Link
             className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-            href="#"
+            href="/doctors"
           >
             <span className="inline-block  w-full bg-gray-50 p-3">
               <img src="/doctor.jpg" alt="nurses" />
@@ -32,7 +32,7 @@ export default function Services() {
 
           <Link
             className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-            href="#"
+            href="/medical"
           >
             <span className="inline-block  w-full bg-gray-50 p-3">
               <img src="/medical.jpg" alt="nurses" />
@@ -43,7 +43,7 @@ export default function Services() {
 
           <Link
             className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-            href="#"
+            href="/mental-health"
           >
             <span className="inline-block w-full bg-gray-50 p-3">
               <img src="/mental.jpg" alt="nurses" />

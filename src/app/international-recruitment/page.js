@@ -43,14 +43,12 @@ export default function Page() {
       />
 
       <div class="flex flex-wrap -mx-4 lg:justify-between my-16">
-        <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
+        <div class="max-w-[580px] mx-auto px-4 lg:w-1/2 xl:w-6/12">
           <div class="mb-12 max-w-[570px] lg:mb-0">
             <h2 class="text-dark mb-6 text-2xl font-bold uppercase">
               Prime Locums - International Recruitment
             </h2>
           </div>
-        </div>
-        <div class="max-w-2/3 px-4 lg:w-1/2 xl:w-5/12">
           <div class="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
             <form>
               <div class="mb-6">

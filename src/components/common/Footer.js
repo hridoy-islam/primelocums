@@ -2,14 +2,25 @@ import Link from "next/link";
 
 export default function Footer() {
   const navItems = [
+    { title: "About", href: "/about" },
+    { title: "Services", href: "/services" },
+    { title: "Careers", href: "/careers" },
     { title: "Recruitment", href: "/recruitment" },
+    { title: "Compliance", href: "/compliance" },
+    { title: "International Recruitment", href: "/international-recruitment" },
     { title: "Contact", href: "/contact" },
+  ];
+  const whatWeDo = [
+    { title: "Nurses", href: "/nurses" },
+    { title: "Doctors", href: "/doctors" },
+    { title: "Medical", href: "/medical" },
+    { title: "Mental Health", href: "/mental-health" },
   ];
   return (
     <footer className="relative z-10 bg-white dark:bg-dark pt-20 pb-10 lg:pt-[120px] lg:pb-20 ">
       <div className="container mx-auto">
         <div className="flex flex-wrap -mx-4">
-          <div className="w-full px-4 sm:w-2/3 lg:w-4/12">
+          <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
             <div className="w-full mb-10">
               <a
                 href="javascript:void(0)"
@@ -63,7 +74,7 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="w-full px-4 sm:w-1/2 lg:w-4/12">
+          <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
             <div className="w-full mb-10">
               <h4 className="text-lg font-semibold text-dark dark:text-white mb-9">
                 Resources
@@ -82,7 +93,26 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div className="w-full px-4 sm:w-1/2 lg:w-4/12">
+          <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
+            <div className="w-full mb-10">
+              <h4 className="text-lg font-semibold text-dark dark:text-white mb-9">
+                What We Do
+              </h4>
+              <ul className="space-y-3">
+                {whatWeDo.map((item, index) => (
+                  <li key={index}>
+                    <Link
+                      href={item.href}
+                      className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
             <div className="w-full mb-10">
               <h4 className="text-lg font-semibold text-dark dark:text-white mb-9">
                 Follow Us On
