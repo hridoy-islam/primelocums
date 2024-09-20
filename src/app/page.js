@@ -11,7 +11,7 @@ export default function Home() {
       <Overview />
       <Services />
       <OurMission />
-      <Testimonail />
+      {/* <Testimonail /> */}
     </>
   );
 }

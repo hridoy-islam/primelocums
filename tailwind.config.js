@@ -19,7 +19,10 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       screens: {
-        'xs': '320px',
+        xs: "320px",
+      },
+      fontFamily: {
+        sans: ["Arial", "sans-serif"], // Use Arial for sans-serif
       },
     },
   },

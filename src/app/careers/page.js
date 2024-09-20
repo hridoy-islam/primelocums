@@ -22,20 +22,28 @@ export default function Page() {
         the following great opportunities with DRC Locums: • Recruitment
         Consultants • Compliance Consultants • Team leaders • Resourcers
       </p>
-      <h2 className="text-3xl font-bold text-center my-8">Candidates</h2>
-      <p>
-        No matter what your situation is or type of work you require, we are the
-        agency for you and the agency of choice for thousands of temporary
-        healthcare workers throughout the UK. We are one of the leading agencies
-        in the UK and continue to grow from strength to strength. Our highly
-        successful recruitment teams have an unrivalled knowledge and
-        understanding of their respective marketplace. Being a customer focused
-        business we continue to break new ground ensuring our candidates and
-        clients are happy with the level of service being offered. Our vacancies
-        not only cover temporary staff, but also permanent staff to the NHS and
-        private sector. For more information, please explore our site, contact
-        us or register online. Doctors Nurses HCAs GPs AHP/HSS
-      </p>
+      <div className="flex gap-8 my-16">
+        <div className="lg:w-1/2 sm:w-full space-y-6">
+          <h2 className="text-3xl font-bold">Candidates</h2>
+          <p className="text-justify">
+            No matter what your situation is or type of work you require, we are
+            the agency for you and the agency of choice for thousands of
+            temporary healthcare workers throughout the UK. We are one of the
+            leading agencies in the UK and continue to grow from strength to
+            strength. Our highly successful recruitment teams have an unrivalled
+            knowledge and understanding of their respective marketplace. Being a
+            customer focused business we continue to break new ground ensuring
+            our candidates and clients are happy with the level of service being
+            offered. Our vacancies not only cover temporary staff, but also
+            permanent staff to the NHS and private sector. For more information,
+            please explore our site, contact us or register online. Doctors
+            Nurses HCAs GPs AHP/HSS
+          </p>
+        </div>
+        <div className="lg:w-1/2 sm:w-full ">
+          <img src="/careers.jpg" className="rounded-lg" alt="careers" />
+        </div>
+      </div>
 
       <div class="flex flex-wrap -mx-4 lg:justify-between my-16">
         <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
