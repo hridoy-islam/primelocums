@@ -4,9 +4,9 @@ export default function Page() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Mental Health</h2>
       </div>
-      <div className="my-10 grid grid-cols-2 gap-8">
+      <div className="my-10 grid xs:grid-cols-1 grid-cols-2 gap-8">
         <div className="space-y-6">
-          <p>
+          <p className="text-justify">
             We pride ourselves on being able to find you your ideal position
             while providing our clients with high calibre and highly suitable
             candidates. We work with you to develop lasting relationships and

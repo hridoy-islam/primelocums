@@ -4,7 +4,7 @@ export default function Page() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Services</h2>
       </div>
-      <div className="my-10 grid grid-cols-2 gap-8">
+      <div className="my-10 grid xs:grid-cols-1 grid-cols-2 gap-8">
         <div className="space-y-6">
           <p>
             Services Client-services--01As a market leader in the provision of

@@ -9,7 +9,7 @@ export default function page() {
             Regulatory Compliance
           </h2>
           <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 text-justify">
               At Prime Locums, we understand the importance of adhering to the
               UK's legal and regulatory frameworks for recruitment within the
               NHS. Our recruitment practices are in line with the Employment
@@ -50,7 +50,7 @@ export default function page() {
               <h4 className="text-xl font-semibold text-primary mb-4">
                 Right to Work Compliance
               </h4>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 We ensure that all candidates have the right to work in the UK
                 and that any visa requirements are fully complied with,
                 including adherence to UKVI (UK Visas and Immigration) rules. We
@@ -63,7 +63,7 @@ export default function page() {
               <h4 className="text-xl font-semibold text-primary mb-4">
                 Equality and Diversity
               </h4>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 We are committed to The Equality Act 2010, promoting equality
                 and diversity in our recruitment processes. Our policies are
                 designed to ensure that no one is discriminated against based on
@@ -77,7 +77,7 @@ export default function page() {
               <h4 className="text-xl font-semibold text-primary mb-4">
                 GDPR Compliance
               </h4>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Protecting the data and privacy of both our clients and
                 candidates is paramount. We comply with the General Data
                 Protection Regulation (GDPR), ensuring that all personal data is

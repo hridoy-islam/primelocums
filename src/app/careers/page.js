@@ -6,7 +6,7 @@ export default function Page() {
           Careers with Prime Locums
         </h2>
       </div>
-      <p>
+      <p className="text-justify">
         Careers with DRC We are part of the Hamilton Bradshaw Private Equity
         Portfolio owned by entrepreneur James Caan. It is the UK’s leading
         investment firm operating in the recruitment and staffing sector and
@@ -22,8 +22,8 @@ export default function Page() {
         the following great opportunities with DRC Locums: • Recruitment
         Consultants • Compliance Consultants • Team leaders • Resourcers
       </p>
-      <div className="flex gap-8 my-16">
-        <div className="lg:w-1/2 sm:w-full space-y-6">
+      <div className="grid xs:grid-cols-1 md:grid-cols-2 gap-8 my-16">
+        <div className="space-y-6">
           <h2 className="text-3xl font-bold">Candidates</h2>
           <p className="text-justify">
             No matter what your situation is or type of work you require, we are
@@ -40,7 +40,7 @@ export default function Page() {
             Nurses HCAs GPs AHP/HSS
           </p>
         </div>
-        <div className="lg:w-1/2 sm:w-full ">
+        <div className="">
           <img src="/careers.jpg" className="rounded-lg" alt="careers" />
         </div>
       </div>

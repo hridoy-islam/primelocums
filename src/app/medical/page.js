@@ -4,9 +4,9 @@ export default function Page() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Medical</h2>
       </div>
-      <div className="my-10 grid grid-cols-2 gap-8">
+      <div className="my-10 grid xs:grid-cols-1 grid-cols-2 gap-8">
         <div className="space-y-6">
-          <p>
+          <p className="text-justify">
             As a market leader in the provision of medical solutions we are
             capable of developing and adapting a variety of services to meet the
             individual requirements of our clients. For each client a bespoke

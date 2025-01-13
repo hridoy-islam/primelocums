@@ -6,7 +6,7 @@ export default function Page() {
           International Recruitment
         </h2>
       </div>
-      <p>
+      <p className="text-justify">
         International GP Recruitment General Practitioner opportunities
         available in the south of England Are you qualified as a General
         Practitioner/Family Doctor within Europe? Would you like to work in the

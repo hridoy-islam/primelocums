@@ -25,7 +25,7 @@ export default function About() {
 
       <img src="/about.jpg" alt="about locums" className="w-full h-auto my-3" />
 
-      <div className="my-10 grid grid-cols-2 gap-6">
+      <div className="my-10 grid xs:grid-cols-1 grid-cols-2 gap-6">
         <div className="border border-gray-100 shadow-lg rounded-lg p-6">
           <h2 className="text-2xl font-bold mb-6">
             What We Can Offer Candidates

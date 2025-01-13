@@ -4,9 +4,9 @@ export default function Page() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Doctors</h2>
       </div>
-      <div className="my-10 grid grid-cols-2 gap-8">
+      <div className="my-10 grid xs:grid-cols-1 grid-cols-2 gap-8">
         <div className="space-y-6">
-          <p>
+          <p className="text-justify">
             We believe our success comes from understanding what our candidates
             are looking for and therefore meeting expectations and not over
             promising something that simply cannot be delivered. We work with
