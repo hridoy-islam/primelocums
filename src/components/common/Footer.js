@@ -8,6 +8,7 @@ export default function Footer() {
     { title: "Recruitment", href: "/recruitment" },
     { title: "Compliance", href: "/compliance" },
     { title: "International Recruitment", href: "/international-recruitment" },
+    { title: "CRP", href: "/crp.pdf" },
     { title: "Contact", href: "/contact" },
   ];
   const whatWeDo = [
