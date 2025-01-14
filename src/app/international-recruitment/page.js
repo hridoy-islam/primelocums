@@ -42,56 +42,56 @@ export default function Page() {
         className="w-full my-8"
       />
 
-      <div class="flex flex-wrap -mx-4 lg:justify-between my-16">
-        <div class="max-w-[580px] mx-auto px-4 lg:w-1/2 xl:w-6/12">
-          <div class="mb-12 max-w-[570px] lg:mb-0">
-            <h2 class="text-dark mb-6 text-2xl font-bold uppercase">
+      <div className="flex flex-wrap -mx-4 lg:justify-between my-16">
+        <div className="max-w-[580px] mx-auto px-4 lg:w-1/2 xl:w-6/12">
+          <div className="mb-12 max-w-[570px] lg:mb-0">
+            <h2 className="text-dark mb-6 text-2xl font-bold uppercase">
               Prime Locums - International Recruitment
             </h2>
           </div>
-          <div class="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
+          <div className="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
             <form>
-              <div class="mb-6">
+              <div className="mb-6">
                 <input
                   type="text"
                   placeholder="Your Name"
-                  class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                  className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
                 />
               </div>
-              <div class="mb-6">
+              <div className="mb-6">
                 <input
                   type="email"
                   placeholder="Your Email"
-                  class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                  className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
                 />
               </div>
-              <div class="mb-6">
+              <div className="mb-6">
                 <input
                   type="text"
                   placeholder="Your Phone"
-                  class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                  className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
                 />
               </div>
-              <div class="mb-6">
+              <div className="mb-6">
                 <label>Upload Your CV</label>
                 <input
                   type="file"
                   rows="6"
                   placeholder="Your Message"
-                  class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
+                  className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
                 />
               </div>
               <div>
                 <button
                   type="submit"
-                  class="w-full p-3 text-white transition border rounded border-primary bg-primary hover:bg-opacity-90"
+                  className="w-full p-3 text-white transition border rounded border-primary bg-primary hover:bg-opacity-90"
                 >
                   Submit
                 </button>
               </div>
             </form>
             <div>
-              <span class="absolute -right-10 top-[90px] z-[-1]">
+              <span className="absolute -right-10 top-[90px] z-[-1]">
                 <svg
                   width="34"
                   height="134"
@@ -311,7 +311,7 @@ export default function Page() {
                   />
                 </svg>
               </span>
-              <span class="absolute -left-7 -bottom-7 z-[-1]">
+              <span className="absolute -left-7 -bottom-7 z-[-1]">
                 <svg
                   width="107"
                   height="134"

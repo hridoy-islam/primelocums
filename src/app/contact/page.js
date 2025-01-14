@@ -1,25 +1,68 @@
+"use client"
+import emailjs from 'emailjs-com';
+import { useState } from 'react';
+
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus('Sending...');
+
+    // Map form data to match template placeholders
+    const templateParams = {
+      to_name: 'Prime Locums Group Limited',  // Replace with a fixed name or dynamic input if necessary
+      from_name: formData.name,
+      from_email: formData.email,  // Optionally include email
+      phone: formData.phone,
+      message: formData.message,
+    };
+    emailjs.init('rRrZ_8DHYnJSavVR2');  // Replace with your actual Public Key
+    emailjs.send(
+      'service_afm8wss', // Replace with your EmailJS service ID
+      'template_gdrqgfl', // Replace with your EmailJS template ID
+      templateParams,
+    ).then(() => {
+      setStatus('Message sent successfully!');
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    }).catch(() => {
+      setStatus('Error sending message.');
+    });
+  };
   return (
-    <section class="relative z-10 overflow-hidden bg-white dark:bg-dark py-20 lg:py-[120px]">
-      <div class="">
-        <div class="flex flex-wrap -mx-4 lg:justify-between">
-          <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
-            <div class="mb-12 max-w-[570px] lg:mb-0">
-              <span class="block mb-4 text-base font-semibold text-primary">
+    <section className="relative z-10 overflow-hidden bg-white dark:bg-dark py-20 lg:py-[120px]">
+      <div className="">
+        <div className="flex flex-wrap -mx-4 lg:justify-between">
+          <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
+            <div className="mb-12 max-w-[570px] lg:mb-0">
+              <span className="block mb-4 text-base font-semibold text-primary">
                 Contact Us
               </span>
-              <h2 class="text-dark dark:text-white mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+              <h2 className="text-dark dark:text-white mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                 GET IN TOUCH WITH US
               </h2>
-              <p class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9">
+              <p className="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9">
                 If you're an NHS trust or healthcare provider looking for
                 reliable, compliant, and skilled healthcare professionals, Prime
                 Locums is here to support you. Get in touch with us today to
                 discuss your staffing needs and how we can assist in delivering
                 quality care through exceptional healthcare professionals.
               </p>
-              <div class="mb-8 flex w-full max-w-[370px]">
-                <div class="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
+              <div className="mb-8 flex w-full max-w-[370px]">
+                <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                   <svg
                     width="32"
                     height="32"
@@ -33,17 +76,17 @@ export default function ContactPage() {
                     />
                   </svg>
                 </div>
-                <div class="w-full">
-                  <h4 class="mb-1 text-xl font-bold text-dark dark:text-white">
+                <div className="w-full">
+                  <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                     Our Location
                   </h4>
-                  <p class="text-base text-body-color dark:text-dark-6">
+                  <p className="text-base text-body-color dark:text-dark-6">
                     Unit 9.0.1 Town Quay Wharf, Abbey Road London IG11 7BZ
                   </p>
                 </div>
               </div>
-              <div class="mb-8 flex w-full max-w-[370px]">
-                <div class="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
+              <div className="mb-8 flex w-full max-w-[370px]">
+                <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                   <svg
                     width="32"
                     height="32"
@@ -72,17 +115,17 @@ export default function ContactPage() {
                     </defs>
                   </svg>
                 </div>
-                <div class="w-full">
-                  <h4 class="mb-1 text-xl font-bold text-dark dark:text-white">
+                <div className="w-full">
+                  <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                     Phone Number
                   </h4>
-                  <p class="text-base text-body-color dark:text-dark-6">
+                  <p className="text-base text-body-color dark:text-dark-6">
                     +44 20 8214 2906
                   </p>
                 </div>
               </div>
-              <div class="mb-8 flex w-full max-w-[370px]">
-                <div class="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
+              <div className="mb-8 flex w-full max-w-[370px]">
+                <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                   <svg
                     width="32"
                     height="32"
@@ -96,59 +139,73 @@ export default function ContactPage() {
                     />
                   </svg>
                 </div>
-                <div class="w-full">
-                  <h4 class="mb-1 text-xl font-bold text-dark dark:text-white">
+                <div className="w-full">
+                  <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                     Email Address
                   </h4>
-                  <p class="text-base text-body-color dark:text-dark-6">
+                  <p className="text-base text-body-color dark:text-dark-6">
                     info@primelocums.co.uk
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
-            <div class="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
-              <form>
-                <div class="mb-6">
+          <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
+            <div className="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
+
+              <form onSubmit={handleSubmit} >
+                <div className="mb-6">
                   <input
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     placeholder="Your Name"
-                    class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                    className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
                   />
                 </div>
-                <div class="mb-6">
+                <div className="mb-6">
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     placeholder="Your Email"
-                    class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                    className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
                   />
                 </div>
-                <div class="mb-6">
+                <div className="mb-6">
                   <input
                     type="text"
+                    name="phone"
                     placeholder="Your Phone"
-                    class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
                   />
                 </div>
-                <div class="mb-6">
+                <div className="mb-6">
                   <textarea
+                  name="message"
                     rows="6"
                     placeholder="Your Message"
-                    class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
+                    value={formData.message}
+                    onChange={handleChange}
+                    className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
                   ></textarea>
                 </div>
                 <div>
                   <button
                     type="submit"
-                    class="w-full p-3 text-white transition border rounded border-primary bg-primary hover:bg-opacity-90"
+                    className="w-full p-3 text-white transition border rounded border-primary bg-primary hover:bg-opacity-90"
                   >
                     Send Message
                   </button>
                 </div>
+                <p>{status}</p>
               </form>
               <div>
-                <span class="absolute -right-10 top-[90px] z-[-1]">
+                <span className="absolute -right-10 top-[90px] z-[-1]">
                   <svg
                     width="34"
                     height="134"
@@ -368,7 +425,7 @@ export default function ContactPage() {
                     />
                   </svg>
                 </span>
-                <span class="absolute -left-7 -bottom-7 z-[-1]">
+                <span className="absolute -left-7 -bottom-7 z-[-1]">
                   <svg
                     width="107"
                     height="134"
