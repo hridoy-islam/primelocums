@@ -63,11 +63,14 @@ export default function WelcomeHero() {
           <div className="w-full px-4 lg:w-6/12">
             <div className="lg:ml-auto lg:text-right">
               <div className="relative z-10 inline-block pt-11 lg:pt-0">
-                <img
+                {/* <img
                   src="https://cdn.tailgrids.com/2.0/image/marketing/images/hero/hero-image-01.png"
                   alt="hero"
                   className="max-w-full lg:ml-auto"
-                />
+                /> */}
+                <div class="w-[550px] h-[600px] overflow-hidden rounded-tl-[150px] rounded-md">
+                  <img src="/hero.jpg" class="w-full h-full object-cover" />
+                </div>
                 <span className="absolute -left-8 -bottom-8 z-[-1]">
                   <svg
                     width="93"

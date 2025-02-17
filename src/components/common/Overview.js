@@ -10,14 +10,14 @@ export default function Overview() {
               <div className="w-full px-3 sm:px-4 xl:w-1/2">
                 <div className="py-3 sm:py-4">
                   <img
-                    src="https://i.ibb.co/gFb3ns6/image-1.jpg"
+                    src="/locums1.jpg"
                     alt=""
                     className="w-full rounded-2xl"
                   />
                 </div>
                 <div className="py-3 sm:py-4">
                   <img
-                    src="https://i.ibb.co/rfHFq15/image-2.jpg"
+                    src="/locums3.jpg"
                     alt=""
                     className="w-full rounded-2xl"
                   />
@@ -26,7 +26,7 @@ export default function Overview() {
               <div className="w-full px-3 sm:px-4 xl:w-1/2">
                 <div className="relative z-10 my-4">
                   <img
-                    src="https://i.ibb.co/9y7nYCD/image-3.jpg"
+                    src="/locums2.jpg"
                     alt=""
                     className="w-full rounded-2xl"
                   />
